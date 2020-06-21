@@ -71,3 +71,62 @@ body {
 .list li.minus {
   border-right: 5px solid #c0392b;
 }
+
+
+/* Add Transaction*/
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+/*Delete Button */
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* HOVER */
+
+.list li.minus {
+  border-right: 5px solid #2da3ad;
+}
+
+.list li.minus:hover {
+  border-right: 5px solid #2da3ad;
+  background-color: #2da3ad;
+  color: #f7f7f7
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+/*Copyrights */
+label .copyright{
+  text-align: right;
+}

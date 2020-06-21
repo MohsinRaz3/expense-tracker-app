@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react';
 
 export const AddTransaction = () => {
+    const [description, setDescription] = useState();
+    const [transactionAmount, setTransactionAmount] = useState();
+
+
+
+
+
     return (
         <div>
             <h4> Add New Transaction</h4>
@@ -12,7 +19,11 @@ export const AddTransaction = () => {
 
                        <input type="text"
                        id = "description"
-                       placeholder="Detail of Transactions"/>
+                       placeholder="Detail of Transactions"
+
+                       value={description}
+                       onChange={(e) => setDescription (e.target.value)} />
+
                    </label>
                  </div>
 
@@ -24,15 +35,21 @@ export const AddTransaction = () => {
 
                        <input type="number"
                        id = "transactionamount"
-                       value="Add Transaction"
-                       placeholder="Enter your amount"/>
+                       placeholder="Enter your amount"
+                       
+                       value={transactionAmount}
+                       onChange={(e) => setTransactionAmount(e.target.value)} />
 
                     </label>
 
                    <br/>
 
-                   <input type="submit"
-                        />
+                   <input type="submit"/>
+                   < br/>
+
+                   <label className="copyright">
+                       Copyright &copy; 2020, Mohsin Raz All Rights Reserved.
+                   </label>
 
                 </div>
 
