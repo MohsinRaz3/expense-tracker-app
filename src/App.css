@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&dislay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap');
 
 
 :root {
@@ -6,7 +7,9 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-image: url(exp3.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +25,25 @@ body {
   text-align: center;
 
 }
+.header1{
+  font-family: 'Ubuntu', sans-serif;
+}
+.remove{
+  padding: 0px;
+  margin: 0px;
+}
+.container{
+  padding: 10px 40px;
+  margin: 20px 0px 20px 0px;
+  border: 2px solid grey;
+  transition: 0.5s;
+ 
+}
+.container:hover{
+  -webkit-box-shadow: -1px 1px 14px -6px rgba(109,166,252,0.75);
+  -moz-box-shadow: -1px 1px 14px -6px rgba(109,166,252,0.75);
+  box-shadow: -1px 1px 14px -6px rgba(109,166,252,0.75);
+}
 
 
             /*AccountSummary*/
@@ -29,10 +51,14 @@ body {
 .inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
+  border-radius: 2px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+}
+.inc-exp-container:hover{
+  background-color: rgb(202, 240, 241);
 }
 .money.plus {
   color: #33e67d;
@@ -127,6 +153,20 @@ input[type='number'] {
 }
 
 /*Copyrights */
-label .copyright{
-  text-align: right;
+.copyright{
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+.btn{
+  margin: 10px;
+  background-color:blue;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 60px;
+}
+.btn:hover{
+  transform: scale(1.2);
+  background-color: rgb(90, 131, 252);
+
 }
